@@ -38,7 +38,7 @@ package logins;
 
 			driver.manage().window().maximize();
 
-			driver.get("https://app.glintqa.az.glintinc.com/session/auth");
+			driver.get("https://app.vgqa.glint.cloud.dev.microsoft/session/auth");
 
 			Thread.sleep(3000);
 
@@ -48,7 +48,7 @@ package logins;
 
 			Thread.sleep(3000);
 
-			driver.findElement(By.id("clientUuid")).sendKeys("qa20230712");
+			driver.findElement(By.id("clientUuid")).sendKeys("qa20231201");
 
 			driver.findElement(By.xpath("/html/body/glint-session-root/div/glint-session-client/form/section/footer/button")).click();
 
@@ -117,5 +117,93 @@ package logins;
 	 
 		}
 		
+		@Test	
 
+		public void TC_MR_002() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+
+			driver.findElement(By.linkText("Roll-up Hierarchy")).click();
+			
+			Thread.sleep(3000);
+			
+			
+			driver.close();
+		
+	 
+		}
+		
+		@Test	
+
+		public void TC_MR_003() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+
+			driver.findElement(By.linkText("Roll-up Hierarchy")).click();
+			
+			Thread.sleep(3000);
+			
+			driver.close();
+		
+	 
+		}
+		
+		@Test	
+
+		public void TC_MR_004() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+
+			driver.findElement(By.xpath("//button[@class='btnWithVgIcon btnSlim glintButton ng-star-inserted']\r\n")).click();
+			
+			Thread.sleep(3000);
+			
+			driver.close();
+		
+	 
+		}
+		
+		@Test	
+
+		public void TC_MR_005() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+
+			driver.findElement(By.xpath("//button[@class='btnWithVgIcon btnSlim glintButton ng-star-inserted']\r\n")).click();
+			
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("(//div[@class='menuButton glintButton'])[3]")).click();
+			
+			Thread.sleep(3000);
+			
+			driver.close();
+		
+	 
+		}
 	}
+	
