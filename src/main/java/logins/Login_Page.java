@@ -9,8 +9,8 @@ package logins;
 	import org.openqa.selenium.By;
 
 	import org.openqa.selenium.WebDriver;
-
-	import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 	import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -205,5 +205,149 @@ package logins;
 		
 	 
 		}
+		
+		@Test	
+
+		public void TC_MR_006() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+
+			driver.findElement(By.xpath("//button[@class='btnWithVgIcon btnSlim glintButton ng-star-inserted']\r\n")).click();
+			
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("(//div[@class='menuButton glintButton'])[2]")).click();
+			
+			Thread.sleep(3000);
+			
+			driver.close();
+		
+	 
+		}
+		
+		@Test	
+
+		public void TC_MR_007() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//button[@class='addFilterButtonPanel ng-star-inserted']")).click();
+
+			Thread.sleep(3000);
+			
+			driver.close();
+
+		}
+		
+		@Test	
+
+		public void TC_MR_008() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//button[@class='addFilterButtonPanel ng-star-inserted']")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//button[@class='btnWithIcon addFiltersButton glintButton ng-star-inserted']")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("(//div[@class='menuButton glintButton'])[2]")).click();
+			
+			Thread.sleep(3000);
+			
+			driver.close();
+
+		}
+		
+		@Test	
+
+		public void TC_MR_009() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//button[@class='addFilterButtonPanel ng-star-inserted']")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//button[@class='btnWithIcon addFiltersButton glintButton ng-star-inserted']")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("(//div[@class='menuButton glintButton'])[2]")).click();
+			
+			Thread.sleep(3000);
+			
+            driver.findElement(By.xpath("//li[@class='focusPlaceholder ng-star-inserted']")).click();
+			
+			Thread.sleep(3000);
+			
+			driver.close();
+
+		}
+		
+		@Test	
+
+		public void TC_MR_010() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//button[@class='addFilterButtonPanel ng-star-inserted']")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//button[@class='btnWithIcon addFiltersButton glintButton ng-star-inserted']")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("(//div[@class='menuButton glintButton'])[2]")).click();
+			
+			Thread.sleep(3000);
+			
+            driver.findElement(By.xpath("//li[@class='focusPlaceholder ng-star-inserted']")).click();
+			
+			Thread.sleep(3000);
+			
+            driver.findElement(By.xpath("(//li[@class='item ng-star-inserted'])[2]")).click();
+			
+			Thread.sleep(3000);
+			
+			driver.close();
+
+		}
+		
+		
 	}
+	
 	
