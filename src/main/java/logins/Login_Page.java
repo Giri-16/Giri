@@ -151,7 +151,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 			Thread.sleep(3000);
 
-			driver.findElement(By.linkText("Roll-up Hierarchy")).click();
+			driver.findElement(By.xpath("(//button[@class='menuButton text small glintButton'])[4]")).click();
 			
 			Thread.sleep(3000);
 			
@@ -345,6 +345,82 @@ import org.openqa.selenium.chrome.ChromeDriver;
 			
 			driver.close();
 
+		}
+		
+		@Test	
+
+		public void TC_MR_011() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//button[@class='addFilterButtonPanel ng-star-inserted']")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//button[@class='btnWithIcon addFiltersButton glintButton ng-star-inserted']")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("(//div[@class='menuButton glintButton'])[2]")).click();
+			
+			Thread.sleep(3000);
+			
+            driver.findElement(By.xpath("//li[@class='focusPlaceholder ng-star-inserted']")).click();
+			
+			Thread.sleep(3000);
+			
+            driver.findElement(By.xpath("(//li[@class='item ng-star-inserted'])[2]")).click();
+			
+			Thread.sleep(3000);
+			
+            driver.findElement(By.xpath("(//div[@class='filterEditorRow ng-star-inserted'])[1]")).click();
+			
+			Thread.sleep(3000);
+			
+			driver.close();
+
+		}
+		
+		@Test	
+
+		public void TC_MR_012() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+	
+            driver.findElement(By.xpath("(//button[@class='managerLabel'])[3]")).click();
+			
+			Thread.sleep(3000);			
+			
+		}
+		
+		@Test	
+
+		public void TC_MR_013() throws InterruptedException {
+
+			driver.findElement(By.linkText("Reports")).click();
+
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//div[@class=\"header managerReport\"]")).click();
+
+			Thread.sleep(3000);
+	
+            driver.findElement(By.xpath("(//li[@class='ng-star-inserted'])[9]")).click();
+			
+			Thread.sleep(5000);			
+			
 		}
 		
 		
